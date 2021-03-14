@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	animals = ['bat', 'bird', 'camel', 'cow', 'human', 'pig', 'rat']
+	animals = ['bat', 'camel', 'cow', 'human', 'pig', 'rat']
 	return render_template('home_page.html', animals=animals)
 
 @app.route('/results/<animal1>/<animal2>')

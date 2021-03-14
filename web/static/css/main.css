@@ -30,7 +30,7 @@ body {
 
 .footer {
     background-color: #4A7C59;
-    height: 120px;
+    height: 160px;
 }
     .footer h3 {
         text-align: center;
@@ -41,6 +41,38 @@ body {
         text-align: center;
         color: black;
     }
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #3F729B;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #0E76A8;
+  color: white;
+}
 
 .home_landing {
     background-color: #4A7C59;
@@ -55,6 +87,7 @@ body {
         padding-right: 16px;
         padding-bottom: 26px;
         color: black;
+        font-weight: bold;
         font-size: 55px;
         max-width: 505px; }
 
@@ -85,6 +118,7 @@ body {
 }
     .home_select_instructions h1 {
         color:black;
+        font-weight: bold;
         font-size: 55px;
     }
 
@@ -95,6 +129,7 @@ body {
     transition: 0.3s;
     background-color: #4A7C59;
     font-size: 35px;
+    font-weight: bold;
     color: black;
     border-radius: 8px;
     opacity: 1
