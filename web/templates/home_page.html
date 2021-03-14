@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block body %}
+{% block content %}
 
 	<script src="{{url_for('static', filename='js/home_page.js')}}"> </script>
 
@@ -16,7 +16,7 @@
 
 	<section class="home_select row">
 		<div style="max-width: 1920px; margin: auto">
-			<div class="row">
+			<div class="row" style="border: 2px solid red;">
 				<div class="col-lg-8 col-xs-12">
 
 				{% for animal in animals %}
@@ -27,13 +27,15 @@
 
 				</div>
 
-				<div class="home_select_r col-lg-4 col-xs-12">
-					<h1> Please select the animals of interest </h1>
-					<button class="button" onclick="getResultClickHandler(this)"> Go </button>
+				<div class="home_select_r col-lg-4 col-xs-12 align-self-center" style="border: 2px solid red">
+					<div class="home_select_r_content"> 
+						<h1> Please select the animals of interest </h1>
+						<button class="button" onclick="getResultClickHandler(this)"> Go </button>
+					</div>
 				</div>
 
 			</div>
 		</div>
 	</section>
 
-{% endblock body %}
+{% endblock content %}

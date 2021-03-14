@@ -6,7 +6,25 @@
 
 <html>
 <head>
-	<title> Next-Door Neighbor </title>
+	<title> Next-Door Neighbour </title>
 </head>
-<body> {% block body %} {% endblock %} </body>
+
+
+<body>
+	<div class="nav row">
+		<div class="row" style="max-width: 1920px; margin: auto">
+			<div class="col-lg-1"> </div>
+				<a href = '/'>
+					<div class="nav_text hidden-xs hidden-sm hidden-md col-lg-1 align-self-center"> 
+						Nextdoor Neighbour
+					</div>
+					<div class="col-lg-1">
+						<img class="nav_logo" src="{{url_for('static', filename='images/logo.png')}}"> </img>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div> {% block content %} {% endblock %} </div>
+</body>
 </html>
