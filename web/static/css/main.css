@@ -28,6 +28,20 @@ body {
         width: auto;
     }
 
+.footer {
+    background-color: #4A7C59;
+    height: 120px;
+}
+    .footer h3 {
+        text-align: center;
+        color: black;
+    }
+
+    .footer h4 {
+        text-align: center;
+        color: black;
+    }
+
 .home_landing {
     background-color: #4A7C59;
     position: relative;
@@ -83,6 +97,7 @@ body {
     transition: 0.3s;
     background-color: #4A7C59;
     font-size: 35px;
-    color: white;
+    color: black;
     border-radius: 8px;
+    opacity: 1
 }
