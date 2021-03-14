@@ -14,10 +14,10 @@ body {
     .nav .nav_text {
         color: black;
         font-weight: bold;
-        font-size: 30px;
+        padding-top: 15px;
+        font-size: 20px;
         margin: auto;
         text-align: left;
-        padding-left: 10px;
         
     }
     .nav .nav_logo {
@@ -31,7 +31,7 @@ body {
 
 .footer {
     background-color: #4A7C59;
-    height: 160px;
+    height: 300px;
 }
     .footer h3 {
         text-align: center;
