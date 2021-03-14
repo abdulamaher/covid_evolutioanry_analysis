@@ -7,15 +7,6 @@ body {
     color: #444;
 }
 
-.row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-
 .nav {
     background-color: #4A7C59;
 }
@@ -77,18 +68,21 @@ body {
     opacity: 1 !important;
 }
 
-.home_select_r {}
-    .home_select_r h1 {
-        color:red;
-    }
-    .home_select_r .home_select_r_content {
-        border: 2px solid red;
+
+.home_select_instructions {
+}
+    .home_select_instructions h1 {
+        color:black;
+        font-size: 55px;
     }
 
 .button {
-    padding: 12px 16px 10px 16px;
+    width: 180px;
+    height: 80px;
+    padding: 10px 16px 10px 16px;
     transition: 0.3s;
     background-color: #4A7C59;
+    font-size: 35px;
     color: white;
     border-radius: 8px;
 }

@@ -16,24 +16,23 @@
 
 	<section class="home_select row">
 		<div style="max-width: 1920px; margin: auto">
+			<div class="home_select_instructions row"> 
+				<h1> Please select two animals of interest for genome comparison. </h1>
+			</div>
+
 			<div class="row" style="border: 2px solid red;">
-				<div class="col-lg-8 col-xs-12">
 
 				{% for animal in animals %}
 					<div class="col-lg-4 col-xs-12" style="border: 2px solid red">
 						<img class="home_icons" id={{animal}} src="{{url_for('static', filename='images/' + animal + '.png')}}" onclick="iconClickHandler(this)"> </img>
 					</div>
 				{% endfor %}
-
+			</div>
+			<div class="home_select_submit row">
+				<div class="col-lg-5"> </div>
+				<div class="col-lg-2">
+					<button class="button onclick="getResultClickHandler(this)"> enter </button>
 				</div>
-
-				<div class="home_select_r col-lg-4 col-xs-12 align-self-center" style="border: 2px solid red">
-					<div class="home_select_r_content"> 
-						<h1> Please select the animals of interest </h1>
-						<button class="button" onclick="getResultClickHandler(this)"> Go </button>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
