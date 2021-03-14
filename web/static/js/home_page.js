@@ -1,4 +1,5 @@
 var selectedIcons = []
+var selectedVariants = null
 
 function iconClickHandler(e) {
 
@@ -26,9 +27,20 @@ function iconClickHandler(e) {
 function getResultClickHandler(e) {
 	if (selectedIcons.length != 2) {
 		alert("You need to select two animals for comparison!");
+	} else if (selectedVariants == null) {
+		alert("You need to select a coronavirus variant!")
 	} else {
 		animal1 = selectedIcons.sort()[0];
 		animal2 = selectedIcons.sort()[1];
 		window.location = "/results/" + animal1 + '/' + animal2;
+	}
+}
+
+function variantClickHandler(e) {
+	selectedVariants = selectedVariants == e.id ? null : e.id;
+	if (selectedVariants == e.id) {
+		e.style.opacity = 1;
+	} else {
+		e.style.opacity = 0.5;
 	}
 }

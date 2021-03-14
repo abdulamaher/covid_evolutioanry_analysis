@@ -102,6 +102,19 @@ body {
     background-image: url('../images/tile.png');
 }
 
+.home_select_submit {
+    padding-top: 20px;
+}
+
+    .home_select_submit h3 {
+        opacity: 0.5;
+        font-size: 35px;
+    }
+
+    .home_select_submit h3:hover {
+        opacity: 1;
+    }
+
 .home_icons {
     opacity: 0.5;
     width: 300px;

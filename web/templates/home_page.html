@@ -28,12 +28,24 @@
 					</div>
 				{% endfor %}
 			</div>
+			<div class="home_select_instructions row"> 
+				<h1> Please select the coronavirus variant. </h1>
+			</div>
+			<div class="home_select_submit row" style="text-align: center">
+				{% for variant in variants %}
+					<div class="col-lg-4 col-xs-12">
+						<h3 id={{variant}} onclick="variantClickHandler(this)"> {{variant}} </h3>
+					</div>
+				{% endfor %}
+			</div>
+
 			<div class="home_select_submit row">
 				<div class="col-lg-5"> </div>
 				<div class="col-lg-2 align-self-center" style="text-align: center">
 					<button class="button" onclick="getResultClickHandler(this)"> enter </button>
 				</div>
 			</div>
+
 		</div>
 	</section>
 
