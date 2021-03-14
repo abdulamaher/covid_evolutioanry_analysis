@@ -123,14 +123,16 @@ body {
     }
 
 .button {
-    width: 150px;
-    height: 80px;
+    border: 0px;
+    width: 180px;
+    height: 60px;
     padding: 10px 16px 10px 16px;
+    text-align: center
     transition: 0.3s;
     background-color: #4A7C59;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     color: black;
-    border-radius: 8px;
+    border-radius: 28px;
     opacity: 1
 }
