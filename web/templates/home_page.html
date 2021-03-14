@@ -3,22 +3,37 @@
 
 	<script src="{{url_for('static', filename='js/home_page.js')}}"> </script>
 
-	<section class="home_landing row">
-		<h1> Evolutionary analysis of coronavirus genome to prevent the next pandemic </h1>
-	</section>
+	<div class="home_landing row">
+		<div class="row" style="max-width: 1920px; margin: auto">
+			<div class="col-lg-8 col-xs-12" style="border: 2px solid red">
+				<h1> Evolutionary analysis of coronavirus genome to prevent the next pandemic </h1>
+			</div>
+			<div class="col-lg-4 col-xs-12" style="border: 2px solid red">
+				<img class="home_illustration" src="{{url_for('static', filename='images/home-illustration.png')}}"> </img>
+			</div>
+		</div>
+	</div>
 
 	<section class="home_select row">
 		<div style="max-width: 1920px; margin: auto">
-			{% for animal in animals %}
-				<div class="col-sm-4" style="border: 2px solid red">
-					<img class="home_icons" id={{animal}} src="{{url_for('static', filename='images/' + animal + '.png')}}" onclick="iconClickHandler(this)"> </img>
-				</div>
-			{% endfor %}
-		</div>
-	</section>
+			<div class="row">
+				<div class="col-lg-8 col-xs-12">
 
-	<section class="home_submit row"> 
-		<button onclick="getResultClickHandler(this)"> Go </button>
+				{% for animal in animals %}
+					<div class="col-lg-4 col-xs-12" style="border: 2px solid red">
+						<img class="home_icons" id={{animal}} src="{{url_for('static', filename='images/' + animal + '.png')}}" onclick="iconClickHandler(this)"> </img>
+					</div>
+				{% endfor %}
+
+				</div>
+
+				<div class="home_select_r col-lg-4 col-xs-12">
+					<h1> Please select the animals of interest </h1>
+					<button class="button" onclick="getResultClickHandler(this)"> Go </button>
+				</div>
+
+			</div>
+		</div>
 	</section>
 
 {% endblock body %}
