@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-<html>
-<head>
-	<title> Hello World! </title>
-</head>
-<body>
-	<h1> Testing </h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block body %}
+
+	<script src="{{url_for('static', filename='js/home_page.js')}}"> </script>
+
+	<section class="home_landing row">
+		<h1> Evolutionary analysis of coronavirus genome to prevent the next pandemic </h1>
+	</section>
+
+	<section class="home_select row">
+		<div style="max-width: 1920px; margin: auto">
+			{% for animal in animals %}
+				<div class="col-sm-4" style="border: 2px solid red">
+					<img class="home_icons" id={{animal}} src="{{url_for('static', filename='images/' + animal + '.png')}}" onclick="iconClickHandler(this)"> </img>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section class="home_submit row"> 
+		<button onclick="getResultClickHandler(this)"> Go </button>
+	</section>
+
+{% endblock body %}
