@@ -5,10 +5,10 @@
 
 	<div class="home_landing row">
 		<div class="row" style="max-width: 1920px; margin: auto">
-			<div class="col-lg-8 col-xs-12" style="border: 2px solid red">
+			<div class="col-lg-8 col-xs-12">
 				<h1> Evolutionary analysis of coronavirus genome to prevent the next pandemic </h1>
 			</div>
-			<div class="col-lg-4 col-xs-12" style="border: 2px solid red">
+			<div class="col-lg-4 col-xs-12">
 				<img class="home_illustration" src="{{url_for('static', filename='images/home-illustration.png')}}"> </img>
 			</div>
 		</div>
@@ -20,10 +20,10 @@
 				<h1> Please select two animals of interest for genome comparison. </h1>
 			</div>
 
-			<div class="row" style="border: 2px solid red;">
+			<div class="row">
 
 				{% for animal in animals %}
-					<div class="col-lg-4 col-xs-12" style="border: 2px solid red">
+					<div class="col-lg-4 col-xs-12">
 						<img class="home_icons" id={{animal}} src="{{url_for('static', filename='images/' + animal + '.png')}}" onclick="iconClickHandler(this)"> </img>
 					</div>
 				{% endfor %}
