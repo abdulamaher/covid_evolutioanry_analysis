@@ -13,7 +13,7 @@ def home_page():
 
 @app.route('/results/<animal1>/<animal2>')
 def result_page(animal1, animal2):
-	return "Comparison of " + animal1 + " and " + animal2
+	return render_template("results.html")
 
 if __name__ == '__main__':
 	app.debug = True
